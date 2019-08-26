@@ -23,7 +23,7 @@
             app:destination="@id/gameWonFragment" />
         <action
             android:id="@+id/action_gameFragment_to_gameOverFragment"
-            app:destination="@id/gameOverFragment2" />
+            app:destination="@id/gameOverFragment" />
     </fragment>
     <fragment
         android:id="@+id/gameOverFragment2"
@@ -41,4 +41,9 @@
             android:id="@+id/action_gameWonFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.mir00r.androidtrivia.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
 </navigation>
