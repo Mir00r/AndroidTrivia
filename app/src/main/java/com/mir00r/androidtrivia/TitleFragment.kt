@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.mir00r.androidtrivia.databinding.FragmentTitleBinding
 
 /**
@@ -23,8 +23,10 @@ class TitleFragment : Fragment() {
             inflater,
             R.layout.fragment_title, container, false
         )
+        //The complete onClickListener with Navigation to navigate game fragment
+        binding.playButton.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment)
+        }
         return binding.root
     }
-
-
 }
