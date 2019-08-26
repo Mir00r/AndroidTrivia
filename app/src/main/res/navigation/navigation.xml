@@ -26,9 +26,9 @@
             app:destination="@id/gameOverFragment" />
     </fragment>
     <fragment
-        android:id="@+id/gameOverFragment2"
+        android:id="@+id/gameOverFragment"
         android:name="com.mir00r.androidtrivia.GameOverFragment"
-        android:label="GameOverFragment" >
+        android:label="GameOverFragment">
         <action
             android:id="@+id/action_gameOverFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
@@ -36,7 +36,7 @@
     <fragment
         android:id="@+id/gameWonFragment"
         android:name="com.mir00r.androidtrivia.GameWonFragment"
-        android:label="GameWonFragment" >
+        android:label="GameWonFragment">
         <action
             android:id="@+id/action_gameWonFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
@@ -46,4 +46,9 @@
         android:name="com.mir00r.androidtrivia.AboutFragment"
         android:label="fragment_about"
         tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.mir00r.androidtrivia.RulesFragment"
+        android:label="fragment_rules"
+        tools:layout="@layout/fragment_rules" />
 </navigation>
